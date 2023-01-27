@@ -1,13 +1,11 @@
 package online.market.uz.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import java.time.LocalDateTime;
 
@@ -30,4 +28,10 @@ public class BaseEntity {
     private LocalDateTime updatedDate;
     @Column
     private LocalDateTime deletedDate;
+
+    @OneToOne
+    @JoinColumn(name = "profile_id")
+    @CreatedBy
+    Profile profile;
+
 }
