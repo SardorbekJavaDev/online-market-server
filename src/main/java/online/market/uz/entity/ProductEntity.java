@@ -21,6 +21,9 @@ public class ProductEntity extends BaseEntity{
 
     @Column(name = "brand_id", length = Integer.MAX_VALUE)
     private String brandId;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "brand_id",  insertable = false,updatable = false)
+    private BrandEntity brand;
 
     @Column(name = "category_id")
     private String categoryId;

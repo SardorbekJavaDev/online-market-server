@@ -10,7 +10,7 @@ import java.time.Instant;
 @Getter
 @Setter
 @Entity
-@Table(name = "order")
+@Table(name = "orders")
 public class OrderEntity extends BaseEntity {
 
     @Column(name = "count")
@@ -43,10 +43,10 @@ public class OrderEntity extends BaseEntity {
     @Column(name = "payment_type_id")
     private String paymentTypeId;
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "payment_type_id")
+    @JoinColumn(name = "payment_type_id", insertable = false, updatable = false)
     private PaymentTypeEntity paymentType;
 
-    @Column(name = "profile_id")
+    @Column(name = "profile_id", insertable = false, updatable = false)
     private String profileId;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "profile_id", insertable = false, updatable = false)

@@ -23,7 +23,7 @@ public class LocationEntity extends BaseEntity{
     @Column(name = "longitude")
     private BigDecimal longitude;
 
-    @Column(name = "profile_id")
+    @Column(name = "profile_id", insertable = false, updatable = false)
     private String profileId;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "profile_id",  insertable = false,updatable = false)

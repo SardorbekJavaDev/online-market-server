@@ -19,7 +19,7 @@ public class DeviceEntity extends BaseEntity{
     @Column(name = "status", length = Integer.MAX_VALUE)
     private String status;
 
-    @Column(name = "profile_id")
+    @Column(name = "profile_id",insertable = false, updatable = false)
     private String profileId;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "profile_id",  insertable = false,updatable = false)

@@ -19,7 +19,7 @@ public class BrandCategoryEntity extends BaseEntity {
     @Column(name = "category_id")
     private String categoryId;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category_id")
+    @JoinColumn(name = "category_id",insertable = false, updatable = false)
     private CategoryEntity category;
 
 }

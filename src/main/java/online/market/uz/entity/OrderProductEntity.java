@@ -8,18 +8,18 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "order_product")
-public class OrderProductEntity extends BaseEntity{
+public class OrderProductEntity extends BaseEntity {
 
     @Column(name = "product_id")
     private String productId;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_id",  insertable = false,updatable = false)
+    @JoinColumn(name = "product_id", insertable = false, updatable = false)
     private ProductEntity food;
 
     @Column(name = "order_id")
     private String orderId;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "order_id")
+    @JoinColumn(name = "order_id", insertable = false, updatable = false)
     private OrderEntity orderEntity;
 
 }

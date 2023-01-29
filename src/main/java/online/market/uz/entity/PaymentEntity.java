@@ -34,10 +34,10 @@ public class PaymentEntity extends BaseEntity {
     @Column(name = "order_id")
     private String orderId;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "order_id")
+    @JoinColumn(name = "order_id", insertable = false, updatable = false)
     private OrderEntity order;
 
-    @Column(name = "profile_id")
+    @Column(name = "profile_id",insertable = false, updatable = false)
     private String profileId;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "profile_id", insertable = false, updatable = false)
