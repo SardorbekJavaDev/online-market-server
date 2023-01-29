@@ -10,17 +10,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "brend")
-public class BrendEntity {
-    @Id
-    @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
-    private String id;
+@Table(name = "payment_type")
+public class PaymentTypeEntity extends BaseEntity {
 
     @Column(name = "name", length = Integer.MAX_VALUE)
     private String name;
-
-    @Column(name = "type", length = Integer.MAX_VALUE)
-    private String type;
 
     @Column(name = "status", length = Integer.MAX_VALUE)
     private String status;

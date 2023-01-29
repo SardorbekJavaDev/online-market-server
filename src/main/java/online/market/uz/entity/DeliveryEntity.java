@@ -13,10 +13,7 @@ import java.time.Instant;
 @Setter
 @Entity
 @Table(name = "delivery")
-public class Delivery {
-    @Id
-    @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
-    private String id;
+public class DeliveryEntity  extends BaseEntity {
 
     @Column(name = "type", length = Integer.MAX_VALUE)
     private String type;

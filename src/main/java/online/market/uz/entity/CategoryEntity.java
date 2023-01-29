@@ -8,10 +8,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "category")
-public class Category {
-    @Id
-    @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
-    private String id;
+public class CategoryEntity extends BaseEntity {
 
     @Column(name = "name", length = Integer.MAX_VALUE)
     private String name;
@@ -19,8 +16,10 @@ public class Category {
     @Column(name = "status", length = Integer.MAX_VALUE)
     private String status;
 
+    @Column(name = "parent_category_id")
+    private String parentCategoryId;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category_id")
-    private Category category;
+    @JoinColumn(name = "parent_category_id")
+    private CategoryEntity parentCategory;
 
 }

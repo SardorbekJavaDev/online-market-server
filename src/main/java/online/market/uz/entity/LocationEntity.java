@@ -1,9 +1,6 @@
 package online.market.uz.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,10 +9,7 @@ import java.math.BigDecimal;
 @Setter
 @Entity
 @Table(name = "location")
-public class Location {
-    @Id
-    @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
-    private String id;
+public class LocationEntity extends BaseEntity{
 
     @Column(name = "name", length = Integer.MAX_VALUE)
     private String name;
@@ -29,4 +23,9 @@ public class Location {
     @Column(name = "longitude")
     private BigDecimal longitude;
 
+    @Column(name = "profile_id")
+    private String profileId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "profile_id",  insertable = false,updatable = false)
+    private ProfileEntity profile;
 }

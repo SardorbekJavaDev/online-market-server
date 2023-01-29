@@ -1,18 +1,16 @@
 package online.market.uz.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.Instant;
+
 @Getter
 @Setter
 @Entity
 @Table(name = "profile")
 public class ProfileEntity extends BaseEntity {
-
 
     @Column(name = "name", length = Integer.MAX_VALUE)
     private String name;
@@ -32,7 +30,10 @@ public class ProfileEntity extends BaseEntity {
     @Column(name = "userRole", length = Integer.MAX_VALUE)
     private String userRole;
 
-    @Column(name = "billing_information_id", length = Integer.MAX_VALUE)
+    @Column(name = "billing_information_id")
     private String billingInformationId;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "billing_information_id",  insertable = false,updatable = false)
+    private BillingInformationEntity billingInformation;
 
 }

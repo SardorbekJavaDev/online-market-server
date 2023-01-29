@@ -11,10 +11,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "card_type")
-public class CardTypeEntity {
-    @Id
-    @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
-    private String id;
+public class CardTypeEntity extends BaseEntity{
 
     @Column(name = "type", length = Integer.MAX_VALUE)
     private String type;

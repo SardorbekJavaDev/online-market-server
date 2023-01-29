@@ -6,14 +6,12 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+
 @Getter
 @Setter
 @Entity
 @Table(name = "payment")
-public class Payment {
-    @Id
-    @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
-    private String id;
+public class PaymentEntity extends BaseEntity {
 
     @Column(name = "amount")
     private BigDecimal amount;
@@ -30,11 +28,19 @@ public class Payment {
     @Column(name = "method", length = Integer.MAX_VALUE)
     private String method;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "order_id")
-    private Order order;
-
     @Column(name = "comment", length = Integer.MAX_VALUE)
     private String comment;
+
+    @Column(name = "order_id")
+    private String orderId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "order_id")
+    private OrderEntity order;
+
+    @Column(name = "profile_id")
+    private String profileId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "profile_id", insertable = false, updatable = false)
+    private ProfileEntity profile;
 
 }

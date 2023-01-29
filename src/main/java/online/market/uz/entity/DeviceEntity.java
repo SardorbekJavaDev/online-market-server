@@ -1,9 +1,6 @@
 package online.market.uz.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,10 +8,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "device")
-public class Device {
-    @Id
-    @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
-    private String id;
+public class DeviceEntity extends BaseEntity{
 
     @Column(name = "device_type", length = Integer.MAX_VALUE)
     private String deviceType;
@@ -24,5 +18,11 @@ public class Device {
 
     @Column(name = "status", length = Integer.MAX_VALUE)
     private String status;
+
+    @Column(name = "profile_id")
+    private String profileId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "profile_id",  insertable = false,updatable = false)
+    private ProfileEntity profile;
 
 }

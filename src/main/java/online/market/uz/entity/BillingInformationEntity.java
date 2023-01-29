@@ -1,8 +1,6 @@
 package online.market.uz.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 @Getter
@@ -26,7 +24,10 @@ public class BillingInformationEntity extends BaseEntity {
     @Column(name = "phone_2", length = Integer.MAX_VALUE)
     private String phone2;
 
-    @Column(name = "card_id", length = Integer.MAX_VALUE)
+    @Column(name = "card_id")
     private String cardId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "card_id",  insertable = false,updatable = false)
+    private CardEntity card;
 
 }

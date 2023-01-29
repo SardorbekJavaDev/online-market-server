@@ -1,16 +1,10 @@
 package online.market.uz.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "card")
-public class CardEntity {
-    @Id
-    @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
-    private String id;
+public class CardEntity extends BaseEntity{
 
     @Column(name = "name", length = Integer.MAX_VALUE)
     private String name;
@@ -18,8 +12,8 @@ public class CardEntity {
     @Column(name = "number", length = Integer.MAX_VALUE)
     private String number;
 
-    @Column(name = "validaty_period", length = Integer.MAX_VALUE)
-    private String validatyPeriod;
+    @Column(name = "validity_period", length = Integer.MAX_VALUE)
+    private String validityPeriod;
 
     @Column(name = "cvv", length = Integer.MAX_VALUE)
     private String cvv;
@@ -33,7 +27,10 @@ public class CardEntity {
     @Column(name = "status")
     private Boolean status;
 
-    @Column(name = "card_type_id", length = Integer.MAX_VALUE)
+    @Column(name = "card_type_id")
     private String cardTypeId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "card_type_id",  insertable = false,updatable = false)
+    private CardTypeEntity cardType;
 
 }

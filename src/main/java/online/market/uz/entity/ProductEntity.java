@@ -8,10 +8,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "product")
-public class ProductEntity {
-    @Id
-    @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
-    private String id;
+public class ProductEntity extends BaseEntity{
 
     @Column(name = "name", length = Integer.MAX_VALUE)
     private String name;
@@ -19,21 +16,16 @@ public class ProductEntity {
     @Column(name = "model", length = Integer.MAX_VALUE)
     private String model;
 
-    @Column(name = "brend_id", length = Integer.MAX_VALUE)
-    private String brendId;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category_id")
-    private Category category;
-
-    @Column(name = "branch_id", length = Integer.MAX_VALUE)
-    private String branchId;
-
     @Column(name = "status", length = Integer.MAX_VALUE)
     private String status;
 
-    @Column(name = "count")
-    private Integer count;
+    @Column(name = "brand_id", length = Integer.MAX_VALUE)
+    private String brandId;
 
+    @Column(name = "category_id")
+    private String categoryId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id",  insertable = false,updatable = false)
+    private CategoryEntity category;
 
 }
