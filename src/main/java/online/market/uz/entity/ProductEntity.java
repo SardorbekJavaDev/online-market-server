@@ -8,7 +8,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "product")
-public class Product {
+public class ProductEntity {
     @Id
     @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
     private String id;

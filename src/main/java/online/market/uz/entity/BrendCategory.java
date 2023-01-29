@@ -15,6 +15,6 @@ public class BrendCategory {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "brend_id")
-    private Brend brend;
+    private BrendEntity brendEntity;
 
 }

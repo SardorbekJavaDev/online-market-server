@@ -32,6 +32,6 @@ public class BaseEntity {
     @OneToOne
     @JoinColumn(name = "profile_id")
     @CreatedBy
-    Profile profile;
+    ProfileEntity profileEntity;
 
 }

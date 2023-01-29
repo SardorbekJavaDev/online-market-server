@@ -7,7 +7,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "card")
-public class Card {
+public class CardEntity {
     @Id
     @Column(name = "id", nullable = false, length = Integer.MAX_VALUE)
     private String id;

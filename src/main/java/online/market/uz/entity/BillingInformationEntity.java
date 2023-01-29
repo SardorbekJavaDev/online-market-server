@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "billing_information")
-public class BillingInformation extends BaseEntity {
+public class BillingInformationEntity extends BaseEntity {
 
     @Column(name = "passport_front", length = Integer.MAX_VALUE)
     private String passportFront;

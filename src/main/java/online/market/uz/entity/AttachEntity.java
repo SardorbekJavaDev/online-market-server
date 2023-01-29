@@ -10,10 +10,10 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "attach")
-public class Attach extends BaseEntity {
+public class AttachEntity extends BaseEntity {
 
-    @Column(name = "orginalName", length = Integer.MAX_VALUE)
-    private String orginalName;
+    @Column(name = "originalName", length = Integer.MAX_VALUE)
+    private String originalName;
 
     @Column(name = "generatedName", length = Integer.MAX_VALUE)
     private String generatedName;
@@ -24,8 +24,8 @@ public class Attach extends BaseEntity {
     @Column(name = "size")
     private Long size;
 
-    @Column(name = "contentType", length = Integer.MAX_VALUE)
-    private String contentType;
+    @Column(name = "extension", length = Integer.MAX_VALUE)
+    private String extension;
 
     @Column(name = "status")
     private Boolean status;

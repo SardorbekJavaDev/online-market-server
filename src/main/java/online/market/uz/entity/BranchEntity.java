@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "branch")
-public class Branch extends BaseEntity{
+public class BranchEntity extends BaseEntity {
     @Column(name = "name", length = Integer.MAX_VALUE)
     private String name;
 
