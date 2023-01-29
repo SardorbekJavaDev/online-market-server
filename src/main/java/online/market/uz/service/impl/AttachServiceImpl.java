@@ -1,4 +1,4 @@
-package online.market.uz.service;
+package online.market.uz.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import online.market.uz.dto.AttachDTO;
@@ -6,6 +6,7 @@ import online.market.uz.entity.AttachEntity;
 import online.market.uz.exception.AppBadRequestException;
 import online.market.uz.exception.ItemNotFoundException;
 import online.market.uz.repository.AttachRepository;
+import online.market.uz.service.AttachService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
@@ -25,7 +26,7 @@ import java.util.Calendar;
 
 @Service
 @RequiredArgsConstructor
-public class AttachService {
+public class AttachServiceImpl implements AttachService {
 
     @Value("${attach.upload.folder}")
     private String uploadFolder;
