@@ -5,7 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-
+/**
+ * A DTO for the {@link online.market.uz.entity.AttachEntity entity
+ */
 @Setter
 @Getter
 @JsonInclude(JsonInclude.Include.NON_NULL)
