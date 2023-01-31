@@ -146,7 +146,6 @@ public class AttachServiceImpl implements AttachService {
     }
 
 
-    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
     public String getYMDString() {
         int year = Calendar.getInstance().get(Calendar.YEAR);
