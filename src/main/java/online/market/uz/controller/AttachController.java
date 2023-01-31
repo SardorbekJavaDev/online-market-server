@@ -4,7 +4,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import online.market.uz.dto.AttachDTO;
+import online.market.uz.dto.response.AttachResponseDTO;
 import online.market.uz.service.impl.AttachServiceImpl;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
@@ -22,14 +22,14 @@ public class AttachController {
 
     @ApiOperation(value = "upload Attach", notes = "Method used for upload Attach")
     @PostMapping("/upload")
-    public ResponseEntity<AttachDTO> create(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<AttachResponseDTO> create(@RequestParam("file") MultipartFile file) {
         log.warn("Attach upload {}{}", file.getOriginalFilename(), AttachController.class);
         return ResponseEntity.ok(attachServiceImpl.upload(file));
     }
 
     @ApiOperation(value = "Update Attach", notes = "Method used for update Attach")
     @PutMapping("/upload/{id}")
-    public ResponseEntity<AttachDTO> update(@RequestParam("file") MultipartFile file, @PathVariable String id) {
+    public ResponseEntity<AttachResponseDTO> update(@RequestParam("file") MultipartFile file, @PathVariable String id) {
         log.warn("Attach update {}{}", file.getOriginalFilename(), AttachController.class);
         return ResponseEntity.ok(attachServiceImpl.update(file, id));
     }

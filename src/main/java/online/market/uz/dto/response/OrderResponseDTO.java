@@ -1,10 +1,9 @@
-package online.market.uz.dto;
+package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import online.market.uz.entity.OrderEntity;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -14,7 +13,7 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class OrderDTO {
+public class OrderResponseDTO {
 
     private String id;
     private Integer count;

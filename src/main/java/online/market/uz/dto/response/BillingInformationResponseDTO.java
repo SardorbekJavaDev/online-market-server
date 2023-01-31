@@ -1,4 +1,4 @@
-package online.market.uz.dto;
+package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class BillingInformationDTO implements Serializable {
+public class BillingInformationResponseDTO implements Serializable {
 
     private String id;
     private String passportFront;

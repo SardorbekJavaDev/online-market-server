@@ -1,20 +1,20 @@
-package online.market.uz.dto;
+package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * A DTO for the {@link online.market.uz.entity.PaymentTypeEntity} entity
+ * A DTO for the {@link online.market.uz.entity.BrandEntity} entity
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class PaymentTypeDTO implements Serializable {
+public class BrandResponseDTO {
 
     private String id;
     private String name;
+    private String type;
     private String status;
     private LocalDateTime createdDate;
 

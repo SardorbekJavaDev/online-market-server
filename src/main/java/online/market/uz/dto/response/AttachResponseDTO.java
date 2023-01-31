@@ -1,4 +1,4 @@
-package online.market.uz.dto;
+package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AttachDTO {
+public class AttachResponseDTO {
 
     private String id;
     private String origenName;

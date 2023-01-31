@@ -1,23 +1,21 @@
-package online.market.uz.dto;
+package online.market.uz.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * A DTO for the {@link online.market.uz.entity.ProductEntity} entity
+ * A DTO for the {@link online.market.uz.entity.BrandEntity} entity
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ProductDTO implements Serializable {
+public class BrandRequestDTO {
 
     private String id;
     private String name;
-    private String model;
+    private String type;
     private String status;
-    private String brandId;
-    private String categoryId;
     private LocalDateTime createdDate;
+
 }

@@ -1,7 +1,7 @@
 package online.market.uz.service.impl;
 
 import lombok.RequiredArgsConstructor;
-import online.market.uz.dto.AttachDTO;
+import online.market.uz.dto.response.AttachResponseDTO;
 import online.market.uz.entity.AttachEntity;
 import online.market.uz.exception.AppBadRequestException;
 import online.market.uz.exception.ItemNotFoundException;
@@ -34,7 +34,7 @@ public class AttachServiceImpl implements AttachService {
     private String downloadUrl;
     private final AttachRepository attachRepository;
 
-    public AttachDTO upload(MultipartFile file) {
+    public AttachResponseDTO upload(MultipartFile file) {
         String pathFolder = getYMDString();
         File folder = new File(uploadFolder + pathFolder);
         if (!folder.exists()) {
@@ -42,7 +42,7 @@ public class AttachServiceImpl implements AttachService {
         }
         String extension = getExtension(file.getOriginalFilename());
         AttachEntity entity = saveAttach(pathFolder, extension, file);
-        AttachDTO dto = toDTO(entity);
+        AttachResponseDTO dto = toDTO(entity);
 
         try {
             byte[] bytes = file.getBytes();
@@ -55,7 +55,7 @@ public class AttachServiceImpl implements AttachService {
     }
 
 
-    public AttachDTO update(MultipartFile file, String id) {
+    public AttachResponseDTO update(MultipartFile file, String id) {
         if (id != null) {
             Thread thread = new Thread() {
                 @Override
@@ -135,8 +135,8 @@ public class AttachServiceImpl implements AttachService {
         return fileName.substring(lastIndex + 1);
     }
 
-    private AttachDTO toDTO(AttachEntity entity) {
-        AttachDTO dto = new AttachDTO();
+    private AttachResponseDTO toDTO(AttachEntity entity) {
+        AttachResponseDTO dto = new AttachResponseDTO();
         dto.setId(entity.getId());
         dto.setCreatedDate(entity.getCreatedDate());
         dto.setOrigenName(entity.getOriginalName());

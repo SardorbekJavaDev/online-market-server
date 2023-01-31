@@ -10,6 +10,9 @@ import lombok.Setter;
 @Table(name = "device")
 public class DeviceEntity extends BaseEntity{
 
+    @Column(name = "device_id", length = Integer.MAX_VALUE)
+    private String deviceId;
+
     @Column(name = "device_type", length = Integer.MAX_VALUE)
     private String deviceType;
 

@@ -1,4 +1,4 @@
-package online.market.uz.dto;
+package online.market.uz.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class DeliveryDTO implements Serializable {
+public class DeliveryRequestDTO implements Serializable {
 
     private String id;
     private String type;

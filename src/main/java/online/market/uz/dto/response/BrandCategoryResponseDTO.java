@@ -1,13 +1,7 @@
-package online.market.uz.dto;
+package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import online.market.uz.entity.BaseEntity;
-import online.market.uz.entity.BrandEntity;
-import online.market.uz.entity.CategoryEntity;
 
 import java.time.LocalDateTime;
 
@@ -16,7 +10,7 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class BrandCategoryDTO {
+public class BrandCategoryResponseDTO {
 
     private String id;
     private String brandId;
