@@ -3,25 +3,23 @@ package online.market.uz.controller;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import online.market.uz.dto.request.BrandCategoryRequestDTO;
 import online.market.uz.dto.response.BrandCategoryResponseDTO;
 import online.market.uz.service.BrandCategoryService;
-import org.springframework.beans.factory.annotation.Autowired;
+import online.market.uz.service.BrandService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/api/v1/brand/category")
 @Api("BrandCategory")
 public class BrandCategoryController {
 
     private final BrandCategoryService brandCategoryService;
-
-    public BrandCategoryController(BrandCategoryService brandCategoryService) {
-        this.brandCategoryService = brandCategoryService;
-    }
 
     @ApiOperation(value = "Create Brand Category", notes = "Method used for Create Brand Category")
     @PostMapping("")
