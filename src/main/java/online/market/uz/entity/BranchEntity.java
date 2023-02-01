@@ -3,17 +3,15 @@ package online.market.uz.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.entity.base.BaseWithStatusEntity;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "branch")
-public class BranchEntity extends BaseEntity {
+public class BranchEntity extends BaseWithStatusEntity {
     @Column(name = "name", length = Integer.MAX_VALUE)
     private String name;
-
-    @Column(name = "status")
-    private Boolean status;
 
     @Column(name = "location_id")
     private String locationId;

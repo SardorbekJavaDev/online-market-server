@@ -20,7 +20,5 @@ public class CardTypeRequestDTO implements Serializable {
     private String type;
     @Size(min = 4, max = 8, message = "Prime number not valid")
     private String primeNumber;
-    @Size(min = 3, max = 10, message = "Status not valid")
-    private Boolean status;
 
 }

@@ -3,6 +3,7 @@ package online.market.uz.dto.response;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.dto.response.base.BaseResponse;
 
 import java.time.LocalDateTime;
 /**
@@ -11,12 +12,10 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AttachResponseDTO {
+public class AttachResponseDTO extends BaseResponse {
 
-    private String id;
     private String origenName;
     private String url;
     private long size;
-    private LocalDateTime createdDate;
 
 }

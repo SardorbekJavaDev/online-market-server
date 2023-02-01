@@ -3,12 +3,13 @@ package online.market.uz.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.entity.base.BaseWithoutStatusEntity;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "income_product")
-public class IncomeProductEntity extends BaseEntity{
+public class IncomeProductEntity extends BaseWithoutStatusEntity {
 
     private int count;
 

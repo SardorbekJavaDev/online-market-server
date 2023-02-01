@@ -2,6 +2,7 @@ package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import online.market.uz.dto.response.base.BaseResponse;
 import online.market.uz.enums.SmsStatus;
 
 import java.io.Serializable;
@@ -12,12 +13,10 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class SmsResponseDTO implements Serializable {
+public class SmsResponseDTO extends BaseResponse {
 
-    private String id;
     private String phone;
     private String content;
     private SmsStatus status;
-    private LocalDateTime createdDate;
 
 }

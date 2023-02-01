@@ -2,6 +2,7 @@ package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import online.market.uz.dto.response.base.BaseResponse;
 import online.market.uz.entity.DeviceEntity;
 
 import java.io.Serializable;
@@ -12,13 +13,11 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class DeviceResponseDTO implements Serializable {
+public class DeviceResponseDTO extends BaseResponse {
 
-    private String id;
     private String deviceId;
     private String deviceType;
     private String deviceToken;
     private String status;
-    private LocalDateTime createdDate;
 
 }

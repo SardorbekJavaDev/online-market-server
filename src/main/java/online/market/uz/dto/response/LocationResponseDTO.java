@@ -2,6 +2,7 @@ package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import online.market.uz.dto.response.base.BaseResponse;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -12,13 +13,11 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class LocationResponseDTO implements Serializable {
+public class LocationResponseDTO extends BaseResponse {
 
-    private String id;
     private String name;
     private String status;
     private BigDecimal latitude;
     private BigDecimal longitude;
-    private LocalDateTime createdDate;
 
 }

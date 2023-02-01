@@ -2,6 +2,7 @@ package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import online.market.uz.dto.response.base.BaseResponse;
 import online.market.uz.entity.DeliveryEntity;
 
 import java.io.Serializable;
@@ -14,13 +15,11 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class DeliveryResponseDTO implements Serializable {
+public class DeliveryResponseDTO extends BaseResponse {
 
-    private String id;
     private String type;
     private BigDecimal price;
     private Instant deliveryTime;
     private Boolean status;
-    private LocalDateTime createdDate;
 
 }

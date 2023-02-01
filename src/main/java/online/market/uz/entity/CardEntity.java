@@ -1,12 +1,13 @@
 package online.market.uz.entity;
 
 import jakarta.persistence.*;
+import online.market.uz.entity.base.BaseWithStatusEntity;
 
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "card")
-public class CardEntity extends BaseEntity{
+public class CardEntity extends BaseWithStatusEntity {
 
     @Column(name = "name", length = Integer.MAX_VALUE)
     private String name;
@@ -25,9 +26,6 @@ public class CardEntity extends BaseEntity{
 
     @Column(name = "phone", length = Integer.MAX_VALUE)
     private String phone;
-
-    @Column(name = "status")
-    private Boolean status;
 
     @Column(name = "card_type_id")
     private String cardTypeId;

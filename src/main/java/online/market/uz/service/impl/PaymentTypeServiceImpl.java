@@ -1,9 +1,6 @@
 package online.market.uz.service.impl;
 
 import lombok.RequiredArgsConstructor;
-import online.market.uz.dto.request.PaymentTypeRequestDTO;
-import online.market.uz.dto.response.PaymentTypeResponseDTO;
-import online.market.uz.service.PaymentTypeService;
 import org.springframework.stereotype.Service;
 
 @Service

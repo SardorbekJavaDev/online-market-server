@@ -1,8 +1,6 @@
 package online.market.uz.enums;
 
-public enum OrderStatus {
-    NEW,
-    CHECKED,
+public enum PaymentStatus {
     IN_PROGRESS,
     DONE,
     CANCELED;

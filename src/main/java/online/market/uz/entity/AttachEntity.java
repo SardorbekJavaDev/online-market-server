@@ -5,12 +5,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.entity.base.BaseWithoutStatusEntity;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "attach")
-public class AttachEntity extends BaseEntity {
+public class AttachEntity extends BaseWithoutStatusEntity {
 
     @Column(name = "originalName", length = Integer.MAX_VALUE)
     private String originalName;
@@ -26,8 +27,5 @@ public class AttachEntity extends BaseEntity {
 
     @Column(name = "extension", length = Integer.MAX_VALUE)
     private String extension;
-
-    @Column(name = "status")
-    private Boolean status;
 
 }

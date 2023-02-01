@@ -2,6 +2,7 @@ package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import online.market.uz.dto.response.base.BaseResponse;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -13,9 +14,8 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class PaymentResponseDTO implements Serializable {
+public class PaymentResponseDTO extends BaseResponse {
 
-    private String id;
     private BigDecimal amount;
     private Integer serviceId;
     private Integer transactionId;
@@ -23,6 +23,5 @@ public class PaymentResponseDTO implements Serializable {
     private String method;
     private String comment;
     private String orderId;
-    private LocalDateTime createdDate;
 
 }

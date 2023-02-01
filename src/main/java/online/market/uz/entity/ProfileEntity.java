@@ -3,6 +3,7 @@ package online.market.uz.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.entity.base.BaseWithStatusEntity;
 
 import java.time.Instant;
 
@@ -10,7 +11,7 @@ import java.time.Instant;
 @Setter
 @Entity
 @Table(name = "profile")
-public class ProfileEntity extends BaseEntity {
+public class ProfileEntity extends BaseWithStatusEntity {
 
     @Column(name = "name", length = Integer.MAX_VALUE)
     private String name;

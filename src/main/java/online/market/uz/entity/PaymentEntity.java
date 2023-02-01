@@ -3,6 +3,8 @@ package online.market.uz.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.entity.base.BaseWithoutStatusEntity;
+import online.market.uz.enums.PaymentType;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -11,7 +13,7 @@ import java.time.Instant;
 @Setter
 @Entity
 @Table(name = "payment")
-public class PaymentEntity extends BaseEntity {
+public class PaymentEntity extends BaseWithoutStatusEntity {
 
     @Column(name = "amount")
     private BigDecimal amount;
@@ -30,6 +32,10 @@ public class PaymentEntity extends BaseEntity {
 
     @Column(name = "comment", length = Integer.MAX_VALUE)
     private String comment;
+
+    @Column(name = "payment_type")
+    @Enumerated(EnumType.STRING)
+    private PaymentType paymentType;
 
     @Column(name = "order_id")
     private String orderId;

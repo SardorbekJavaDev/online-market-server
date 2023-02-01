@@ -2,6 +2,7 @@ package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import online.market.uz.dto.response.base.BaseResponse;
 import online.market.uz.entity.OrderEntity;
 
 import java.math.BigDecimal;
@@ -13,9 +14,8 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class OrderResponseDTO {
+public class OrderResponseDTO extends BaseResponse {
 
-    private String id;
     private Integer count;
     private BigDecimal totalAmount;
     private BigDecimal dueAmount;
@@ -25,6 +25,5 @@ public class OrderResponseDTO {
     private Instant endDate;
     private String deliveryId;
     private String paymentTypeId;
-    private LocalDateTime createdDate;
 
 }

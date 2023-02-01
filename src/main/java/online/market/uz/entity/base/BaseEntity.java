@@ -1,8 +1,11 @@
-package online.market.uz.entity;
+
+package online.market.uz.entity.base;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.entity.ProfileEntity;
+import online.market.uz.enums.GeneralStatus;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedBy;
@@ -12,7 +15,6 @@ import java.time.LocalDateTime;
 
 @Setter
 @Getter
-@MappedSuperclass
 public class BaseEntity {
 
     @Id
@@ -23,6 +25,7 @@ public class BaseEntity {
 
     @Column
     private Boolean visible;
+
     @Column
     private LocalDateTime deletedDate;
 

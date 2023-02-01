@@ -3,6 +3,8 @@ package online.market.uz.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.entity.base.BaseWithoutStatusEntity;
+import online.market.uz.enums.OrderStatus;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -11,7 +13,7 @@ import java.time.Instant;
 @Setter
 @Entity
 @Table(name = "orders")
-public class OrderEntity extends BaseEntity {
+public class OrderEntity extends BaseWithoutStatusEntity {
 
     @Column(name = "count")
     private Integer count;
@@ -28,8 +30,9 @@ public class OrderEntity extends BaseEntity {
     @Column(name = "installments")
     private Integer installments;
 
-    @Column(name = "status", length = Integer.MAX_VALUE)
-    private String status;
+    @Column(name = "status")
+    @Enumerated(EnumType.STRING)
+    private OrderStatus status;
 
     @Column(name = "end_date")
     private Instant endDate;

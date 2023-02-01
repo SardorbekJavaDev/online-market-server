@@ -21,8 +21,6 @@ public class ProductRequestDTO implements Serializable {
     @NotBlank(message = "Model required")
     @Size(min = 3, max = 50, message = "Model not valid")
     private String model;
-    @Size(min = 3, max = 10, message = "Status not valid")
-    private String status;
     @NotBlank(message = "Brand ID required")
     @Size(min = 30, max = 40, message = "Brand ID id not valid")
     private String brandId;

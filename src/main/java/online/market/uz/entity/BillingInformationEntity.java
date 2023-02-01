@@ -3,11 +3,13 @@ package online.market.uz.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.entity.base.BaseWithStatusEntity;
+
 @Getter
 @Setter
 @Entity
 @Table(name = "billing_information")
-public class BillingInformationEntity extends BaseEntity {
+public class BillingInformationEntity extends BaseWithStatusEntity {
 
     @Column(name = "passport_front", length = Integer.MAX_VALUE)
     private String passportFront;

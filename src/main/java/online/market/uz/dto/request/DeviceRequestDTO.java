@@ -5,10 +5,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 import online.market.uz.entity.DeviceEntity;
-import online.market.uz.enums.DeviceStatus;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 
 /**
  * A DTO for the {@link DeviceEntity} entity

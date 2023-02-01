@@ -2,6 +2,7 @@ package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import online.market.uz.dto.response.base.BaseResponse;
 
 import java.time.LocalDateTime;
 
@@ -10,11 +11,9 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class BrandCategoryResponseDTO {
+public class BrandCategoryResponseDTO extends BaseResponse {
 
-    private String id;
     private String brandId;
     private String categoryId;
-    private LocalDateTime createdDate;
 
 }

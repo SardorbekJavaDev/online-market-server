@@ -3,12 +3,13 @@ package online.market.uz.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.entity.base.BaseWithoutStatusEntity;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "order_product")
-public class OrderProductEntity extends BaseEntity {
+public class OrderProductEntity extends BaseWithoutStatusEntity {
 
     @Column(name = "product_id")
     private String productId;

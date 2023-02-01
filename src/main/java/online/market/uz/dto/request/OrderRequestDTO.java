@@ -22,8 +22,6 @@ public class OrderRequestDTO {
     private Integer count;
     @NotBlank(message = "Installments required")
     private Integer installments;
-    @Size(min = 3, max = 10, message = "Status not valid")
-    private OrderStatus status;
     @NotBlank(message = "Initial Pay required")
     private Boolean initialPay;
     @NotBlank(message = "Delivery ID required")

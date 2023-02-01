@@ -5,13 +5,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 import online.market.uz.entity.DeliveryEntity;
-import online.market.uz.enums.DeliveryStatus;
-import online.market.uz.enums.DeliveryType;
 
-import javax.swing.text.html.parser.Entity;
 import java.io.Serializable;
-import java.math.BigDecimal;
-import java.time.Instant;
 import java.time.LocalDateTime;
 
 /**
@@ -23,7 +18,7 @@ public class DeliveryRequestDTO implements Serializable {
 
     @NotBlank(message = "Type required")
     @Size(min = 3, max = 20, message = "Type not valid")
-    private DeliveryType type;
+    private String type;
     @NotBlank(message = "Price required")
     private long price;
     @NotBlank(message = "Delivery Time required")

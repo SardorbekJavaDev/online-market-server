@@ -2,6 +2,7 @@ package online.market.uz.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import online.market.uz.dto.response.base.BaseResponse;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -11,9 +12,8 @@ import java.time.LocalDateTime;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class CardResponseDTO implements Serializable {
+public class CardResponseDTO extends BaseResponse {
 
-    private String id;
     private String name;
     private String number;
     private String validityPeriod;
@@ -22,5 +22,5 @@ public class CardResponseDTO implements Serializable {
     private String phone;
     private Boolean status;
     private String cardTypeId;
-    private LocalDateTime createdDate;
+
 }
