@@ -34,6 +34,9 @@ public class OrderEntity extends BaseEntity {
     @Column(name = "end_date")
     private Instant endDate;
 
+    @Column(name = "initial_pay")
+    private Boolean initialPay;
+
     @Column(name = "delivery_id")
     private String deliveryId;
     @OneToOne(fetch = FetchType.LAZY)

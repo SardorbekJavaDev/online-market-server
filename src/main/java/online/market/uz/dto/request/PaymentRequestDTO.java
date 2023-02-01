@@ -14,8 +14,7 @@ import java.time.LocalDateTime;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class PaymentRequestDTO implements Serializable {
-
-    private String id;
+    // TODO: 2/1/2023 o'zgartirish kerak
     private BigDecimal amount;
     private Integer serviceId;
     private Integer transactionId;

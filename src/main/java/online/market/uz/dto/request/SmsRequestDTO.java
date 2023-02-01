@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class SmsRequestDTO implements Serializable {
 
+    // TODO: 2/1/2023 Buni ham Spring Security qo'shlgandan keyin ko'ramiz
     private String id;
     private String phone;
     private String content;

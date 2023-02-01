@@ -3,6 +3,7 @@ package online.market.uz.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import online.market.uz.enums.LocationStatus;
 
 import java.math.BigDecimal;
 @Getter
@@ -15,7 +16,8 @@ public class LocationEntity extends BaseEntity{
     private String name;
 
     @Column(name = "status", length = Integer.MAX_VALUE)
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private LocationStatus status;
 
     @Column(name = "latitude")
     private BigDecimal latitude;

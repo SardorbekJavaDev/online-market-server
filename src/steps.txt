@@ -1,13 +1,13 @@
-1. Servecilarni Interfacedan impl qilish.
-2. ciboda bor narsalarni ishlatib chiqish
-3. Attachni QrCode dan qo'shish & QrCode generation ham qo'shish.
-4. Controllerlarni tugatish.
-5. Sirojiddin akani projectidan yangilanishlarni qo'llash.
-6. Spring Securityni qo'shish.
-7. Swagger qo'shish.
-8. Herokuga run qilib qo'yish (50.000) lik serverga yoki biror tekin alternative ga.
+1. Service impllarga biznes logika yozish.
+2. Sirojiddin akani projectidan yangilanishlarni qo'llash. (Spring Security {JWT}).
+3. Swagger config.
+4. Controllerlarni qo'shimcha API lar bilan to'ldirish.
+5. Excel generation  qo'shish.
+6. QrCode generation qo'shish.
+7. Herokuga run qilib qo'yish (50.000) lik serverga yoki biror tekin alternative ga.
+8. Frontchi bilan gaplashish.
+
 9. Payment qismini bajarish.
-10. Frontchi bilan gaplashish.
 11. telegram bot notification qo'shish.
 
 Dedline 28.02.2023

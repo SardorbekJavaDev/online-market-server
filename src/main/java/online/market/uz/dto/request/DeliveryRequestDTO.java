@@ -1,9 +1,14 @@
 package online.market.uz.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 import online.market.uz.entity.DeliveryEntity;
+import online.market.uz.enums.DeliveryStatus;
+import online.market.uz.enums.DeliveryType;
 
+import javax.swing.text.html.parser.Entity;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -16,11 +21,12 @@ import java.time.LocalDateTime;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class DeliveryRequestDTO implements Serializable {
 
-    private String id;
-    private String type;
-    private BigDecimal price;
-    private Instant deliveryTime;
-    private Boolean status;
-    private LocalDateTime createdDate;
+    @NotBlank(message = "Type required")
+    @Size(min = 3, max = 20, message = "Type not valid")
+    private DeliveryType type;
+    @NotBlank(message = "Price required")
+    private long price;
+    @NotBlank(message = "Delivery Time required")
+    private LocalDateTime deliveryTime;
 
 }

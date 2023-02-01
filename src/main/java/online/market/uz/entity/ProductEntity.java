@@ -28,6 +28,7 @@ public class ProductEntity extends BaseEntity{
     @Column(name = "category_id")
     private String categoryId;
     @ManyToOne(fetch = FetchType.LAZY)
+    // TODO: 2/1/2023 Har bitta category qo'shish uchun bitta so'rov yuboramanmi logichna emasku ???
     @JoinColumn(name = "category_id",  insertable = false,updatable = false)
     private CategoryEntity category;
 

@@ -2,6 +2,8 @@ package online.market.uz.entity;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(name = "card")
 public class CardEntity extends BaseEntity{
@@ -12,11 +14,11 @@ public class CardEntity extends BaseEntity{
     @Column(name = "number", length = Integer.MAX_VALUE)
     private String number;
 
-    @Column(name = "validity_period", length = Integer.MAX_VALUE)
-    private String validityPeriod;
+    @Column(name = "validity_period")
+    private LocalDate validityPeriod;
 
     @Column(name = "cvv", length = Integer.MAX_VALUE)
-    private String cvv;
+    private int cvv;
 
     @Column(name = "bank", length = Integer.MAX_VALUE)
     private String bank;

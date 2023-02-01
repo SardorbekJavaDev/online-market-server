@@ -4,6 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+import java.time.Instant;
+import java.util.UUID;
+
 @SpringBootApplication
 @ComponentScan({"online.market.uz.service"})
 public class OnlineMarketServerApplication {

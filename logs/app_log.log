@@ -1,496 +1,73 @@
-31 Jan 2023 - 10:18:24.311 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 12032 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 10:18:24.383 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 10:18:24.385 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 10:18:26.702 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 10:18:27.050 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 330 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 10:18:28.373 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 10:18:28.401 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 10:18:28.401 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 10:18:28.600 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 10:18:28.601 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 4107 ms
-31 Jan 2023 - 10:18:28.942 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 10:18:29.106 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 10:18:29.538 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 10:18:29.871 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 10:18:30.419 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5da6b13d
-31 Jan 2023 - 10:18:30.427 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 10:18:30.610 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 10:18:34.412 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 10:18:34.436 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 10:18:36.837 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8888 (http) with context path ''
-31 Jan 2023 - 10:18:36.853 - o.m.uz.OnlineMarketServerApplication -  INFO  - Started OnlineMarketServerApplication in 13.656 seconds (process running for 15.509)
-31 Jan 2023 - 10:21:16.448 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 10:21:16.450 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 10:21:16.457 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 10:21:32.647 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 6052 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 10:21:32.670 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 10:21:32.672 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 10:21:34.447 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 10:21:34.794 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 328 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 10:21:36.034 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 10:21:36.058 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 10:21:36.058 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 10:21:36.278 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 10:21:36.278 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 3508 ms
-31 Jan 2023 - 10:21:36.570 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 10:21:36.671 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 10:21:36.984 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 10:21:37.207 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 10:21:37.541 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e67a490
-31 Jan 2023 - 10:21:37.544 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 10:21:37.730 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 10:21:41.191 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 10:21:41.209 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 10:21:43.129 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8888 (http) with context path ''
-31 Jan 2023 - 10:21:43.141 - o.m.uz.OnlineMarketServerApplication -  INFO  - Started OnlineMarketServerApplication in 11.36 seconds (process running for 13.46)
-31 Jan 2023 - 10:22:13.239 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 10:22:13.244 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 10:22:13.254 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 10:22:19.735 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 5480 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 10:22:19.760 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 10:22:19.762 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 10:22:21.192 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 10:22:21.484 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 274 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 10:22:22.505 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 10:22:22.547 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 10:22:22.547 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 10:22:22.696 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 10:22:22.696 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2818 ms
-31 Jan 2023 - 10:22:22.947 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 10:22:23.014 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 10:22:23.267 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 10:22:23.435 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 10:22:23.695 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4bbf38b8
-31 Jan 2023 - 10:22:23.697 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 10:22:23.772 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 10:22:26.879 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 10:22:26.909 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 10:22:28.830 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8888 (http) with context path ''
-31 Jan 2023 - 10:22:28.845 - o.m.uz.OnlineMarketServerApplication -  INFO  - Started OnlineMarketServerApplication in 10.012 seconds (process running for 11.324)
-31 Jan 2023 - 11:30:49.590 - com.zaxxer.hikari.pool.HikariPool -  WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47m25s291ms911µs).
-31 Jan 2023 - 14:33:17.110 - com.zaxxer.hikari.pool.HikariPool -  WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s496ms517µs400ns).
-31 Jan 2023 - 14:35:33.808 - com.zaxxer.hikari.pool.HikariPool -  WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m24s942ms74µs400ns).
-31 Jan 2023 - 15:04:48.942 - com.zaxxer.hikari.pool.HikariPool -  WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m44s914ms434µs300ns).
-31 Jan 2023 - 16:26:30.200 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:26:30.218 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 16:26:30.259 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 16:26:54.706 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 12856 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 16:26:54.739 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 16:26:54.743 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 16:26:57.808 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 16:26:58.224 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 401 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 16:26:59.741 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 16:26:59.775 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 16:26:59.776 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 16:27:00.085 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 16:27:00.085 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 5150 ms
-31 Jan 2023 - 16:27:00.386 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 16:27:00.490 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 16:27:00.831 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 16:27:01.062 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 16:27:01.462 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@57c69937
-31 Jan 2023 - 16:27:01.469 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 16:27:01.681 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 16:27:04.405 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 16:27:04.422 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:27:04.892 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'brandCategoryController' defined in file [D:\Programming\Projects\Process\online-market-server\target\classes\online\market\uz\controller\BrandCategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'online.market.uz.service.BrandCategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-31 Jan 2023 - 16:27:04.893 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:27:04.897 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 16:27:04.906 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 16:27:04.909 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
-31 Jan 2023 - 16:27:04.936 - o.s.b.a.l.ConditionEvaluationReportLogger -  INFO  - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-31 Jan 2023 - 16:27:05.005 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in online.market.uz.controller.BrandCategoryController required a bean of type 'online.market.uz.service.BrandCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'online.market.uz.service.BrandCategoryService' in your configuration.
-
-31 Jan 2023 - 16:33:08.287 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 7292 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 16:33:08.309 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 16:33:08.311 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 16:33:09.783 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 16:33:10.060 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 264 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 16:33:10.828 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 16:33:10.843 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 16:33:10.843 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 16:33:10.985 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 16:33:10.986 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2570 ms
-31 Jan 2023 - 16:33:11.196 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 16:33:11.262 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 16:33:11.498 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 16:33:11.655 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 16:33:11.907 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@375084c9
-31 Jan 2023 - 16:33:11.909 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 16:33:11.978 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 16:33:14.604 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 16:33:14.617 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:33:15.003 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'brandCategoryController' defined in file [D:\Programming\Projects\Process\online-market-server\target\classes\online\market\uz\controller\BrandCategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'online.market.uz.service.BrandCategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-31 Jan 2023 - 16:33:15.005 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:33:15.009 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 16:33:15.017 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 16:33:15.020 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
-31 Jan 2023 - 16:33:15.062 - o.s.b.a.l.ConditionEvaluationReportLogger -  INFO  - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-31 Jan 2023 - 16:33:15.108 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in online.market.uz.controller.BrandCategoryController required a bean of type 'online.market.uz.service.BrandCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'online.market.uz.service.BrandCategoryService' in your configuration.
-
-31 Jan 2023 - 16:33:43.854 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 7040 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 16:33:43.886 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 16:33:43.888 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 16:33:45.372 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 16:33:45.673 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 287 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 16:33:46.430 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 16:33:46.444 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 16:33:46.445 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 16:33:46.582 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 16:33:46.583 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2596 ms
-31 Jan 2023 - 16:33:46.796 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 16:33:46.864 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 16:33:47.089 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 16:33:47.234 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 16:33:47.587 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46cf8c07
-31 Jan 2023 - 16:33:47.591 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 16:33:47.657 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 16:33:50.095 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 16:33:50.109 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:33:50.511 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'brandCategoryController' defined in file [D:\Programming\Projects\Process\online-market-server\target\classes\online\market\uz\controller\BrandCategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'online.market.uz.service.BrandCategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-31 Jan 2023 - 16:33:50.512 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:33:50.515 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 16:33:50.523 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 16:33:50.527 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
-31 Jan 2023 - 16:33:50.552 - o.s.b.a.l.ConditionEvaluationReportLogger -  INFO  - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-31 Jan 2023 - 16:33:50.592 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in online.market.uz.controller.BrandCategoryController required a bean of type 'online.market.uz.service.BrandCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'online.market.uz.service.BrandCategoryService' in your configuration.
-
-31 Jan 2023 - 16:41:19.069 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 15104 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 16:41:19.114 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 16:41:19.121 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 16:41:21.333 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 16:41:21.768 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 415 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 16:41:23.242 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 16:41:23.262 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 16:41:23.262 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 16:41:23.454 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 16:41:23.455 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 4176 ms
-31 Jan 2023 - 16:41:23.708 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 16:41:23.790 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 16:41:24.218 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 16:41:24.422 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 16:41:24.798 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46cf8c07
-31 Jan 2023 - 16:41:24.801 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 16:41:24.932 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 16:41:29.075 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 16:41:29.089 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:41:29.722 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'brandCategoryController' defined in file [D:\Programming\Projects\Process\online-market-server\target\classes\online\market\uz\controller\BrandCategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'online.market.uz.service.BrandCategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-31 Jan 2023 - 16:41:29.723 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:41:29.729 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 16:41:29.751 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 16:41:29.756 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
-31 Jan 2023 - 16:41:29.810 - o.s.b.a.l.ConditionEvaluationReportLogger -  INFO  - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-31 Jan 2023 - 16:41:29.887 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in online.market.uz.controller.BrandCategoryController required a bean of type 'online.market.uz.service.BrandCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'online.market.uz.service.BrandCategoryService' in your configuration.
-
-31 Jan 2023 - 16:44:03.924 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 1652 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 16:44:03.943 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 16:44:03.945 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 16:44:05.304 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 16:44:05.561 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 241 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 16:44:06.417 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 16:44:06.433 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 16:44:06.433 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 16:44:06.593 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 16:44:06.594 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2568 ms
-31 Jan 2023 - 16:44:06.840 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 16:44:06.910 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 16:44:07.169 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 16:44:07.343 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 16:44:07.630 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@375084c9
-31 Jan 2023 - 16:44:07.632 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 16:44:07.703 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 16:44:11.021 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 16:44:11.044 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:44:11.466 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'brandCategoryController' defined in file [D:\Programming\Projects\Process\online-market-server\target\classes\online\market\uz\controller\BrandCategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'online.market.uz.service.BrandCategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-31 Jan 2023 - 16:44:11.467 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:44:11.471 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 16:44:11.480 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 16:44:11.483 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
-31 Jan 2023 - 16:44:11.509 - o.s.b.a.l.ConditionEvaluationReportLogger -  INFO  - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-31 Jan 2023 - 16:44:11.549 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in online.market.uz.controller.BrandCategoryController required a bean of type 'online.market.uz.service.BrandCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'online.market.uz.service.BrandCategoryService' in your configuration.
-
-31 Jan 2023 - 16:45:33.904 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 468 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 16:45:33.927 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 16:45:33.929 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 16:45:35.319 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 16:45:35.541 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 208 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 16:45:37.015 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 16:45:37.043 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 16:45:37.048 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 16:45:37.378 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 16:45:37.382 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 3354 ms
-31 Jan 2023 - 16:45:37.866 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 16:45:38.031 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 16:45:38.526 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 16:45:38.884 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 16:45:39.451 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6537ac
-31 Jan 2023 - 16:45:39.456 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 16:45:39.624 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 16:45:44.354 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 16:45:44.382 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:45:45.256 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'brandCategoryController' defined in file [D:\Programming\Projects\Process\online-market-server\target\classes\online\market\uz\controller\BrandCategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'online.market.uz.service.BrandCategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-31 Jan 2023 - 16:45:45.262 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:45:45.268 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 16:45:45.285 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 16:45:45.307 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
-31 Jan 2023 - 16:45:45.354 - o.s.b.a.l.ConditionEvaluationReportLogger -  INFO  - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-31 Jan 2023 - 16:45:45.599 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in online.market.uz.controller.BrandCategoryController required a bean of type 'online.market.uz.service.BrandCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'online.market.uz.service.BrandCategoryService' in your configuration.
-
-31 Jan 2023 - 16:53:45.547 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 10804 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 16:53:45.574 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 16:53:45.576 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 16:53:47.109 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 16:53:47.398 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 272 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 16:53:48.456 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 16:53:48.518 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 16:53:48.519 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 16:53:48.839 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 16:53:48.840 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 3165 ms
-31 Jan 2023 - 16:53:49.207 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 16:53:49.325 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 16:53:49.780 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 16:53:50.156 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 16:53:50.466 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e67a490
-31 Jan 2023 - 16:53:50.471 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 16:53:50.603 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 16:53:54.231 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 16:53:54.254 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:53:54.951 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'brandCategoryController' defined in file [D:\Programming\Projects\Process\online-market-server\target\classes\online\market\uz\controller\BrandCategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'online.market.uz.service.BrandCategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-31 Jan 2023 - 16:53:54.953 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:53:54.958 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 16:53:54.971 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 16:53:54.977 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
-31 Jan 2023 - 16:53:55.021 - o.s.b.a.l.ConditionEvaluationReportLogger -  INFO  - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-31 Jan 2023 - 16:53:55.096 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in online.market.uz.controller.BrandCategoryController required a bean of type 'online.market.uz.service.BrandCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'online.market.uz.service.BrandCategoryService' in your configuration.
-
-31 Jan 2023 - 16:58:44.680 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 7128 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 16:58:44.705 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 16:58:44.706 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 16:58:46.180 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 16:58:46.480 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 285 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 16:58:47.550 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 16:58:47.584 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 16:58:47.586 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 16:58:47.831 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 16:58:47.832 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 3026 ms
-31 Jan 2023 - 16:58:48.231 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 16:58:48.358 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 16:58:48.757 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 16:58:49.037 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 16:58:49.340 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6537ac
-31 Jan 2023 - 16:58:49.342 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 16:58:49.437 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 16:58:53.177 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 16:58:53.200 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:58:54.148 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'brandCategoryController' defined in file [D:\Programming\Projects\Process\online-market-server\target\classes\online\market\uz\controller\BrandCategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'online.market.uz.service.BrandCategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-31 Jan 2023 - 16:58:54.149 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 16:58:54.155 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 16:58:54.166 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 16:58:54.169 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
-31 Jan 2023 - 16:58:54.212 - o.s.b.a.l.ConditionEvaluationReportLogger -  INFO  - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-31 Jan 2023 - 16:58:54.284 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in online.market.uz.controller.BrandCategoryController required a bean of type 'online.market.uz.service.BrandCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'online.market.uz.service.BrandCategoryService' in your configuration.
-
-31 Jan 2023 - 17:00:49.811 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 5300 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 17:00:49.842 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 17:00:49.844 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 17:00:51.666 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 17:00:52.050 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 362 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 17:00:53.184 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 17:00:53.204 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 17:00:53.204 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 17:00:53.458 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 17:00:53.459 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 3499 ms
-31 Jan 2023 - 17:00:53.786 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 17:00:53.880 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 17:00:54.182 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 17:00:54.434 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 17:00:54.725 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@dc59ec2
-31 Jan 2023 - 17:00:54.728 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 17:00:54.810 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 17:00:58.764 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 17:00:58.784 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 17:00:59.499 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'brandCategoryController' defined in file [D:\Programming\Projects\Process\online-market-server\target\classes\online\market\uz\controller\BrandCategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'online.market.uz.service.BrandCategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-31 Jan 2023 - 17:00:59.502 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 17:00:59.512 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 17:00:59.543 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 17:00:59.549 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
-31 Jan 2023 - 17:00:59.590 - o.s.b.a.l.ConditionEvaluationReportLogger -  INFO  - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-31 Jan 2023 - 17:00:59.656 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in online.market.uz.controller.BrandCategoryController required a bean of type 'online.market.uz.service.BrandCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'online.market.uz.service.BrandCategoryService' in your configuration.
-
-31 Jan 2023 - 17:20:24.696 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 11640 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
-31 Jan 2023 - 17:20:24.741 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
-31 Jan 2023 - 17:20:24.745 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
-31 Jan 2023 - 17:20:26.547 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-31 Jan 2023 - 17:20:26.864 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 299 ms. Found 19 JPA repository interfaces.
-31 Jan 2023 - 17:20:27.996 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
-31 Jan 2023 - 17:20:28.022 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-31 Jan 2023 - 17:20:28.023 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
-31 Jan 2023 - 17:20:28.248 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-31 Jan 2023 - 17:20:28.249 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 3408 ms
-31 Jan 2023 - 17:20:28.577 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-31 Jan 2023 - 17:20:28.686 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
-31 Jan 2023 - 17:20:28.960 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-31 Jan 2023 - 17:20:29.214 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-31 Jan 2023 - 17:20:29.547 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5da6b13d
-31 Jan 2023 - 17:20:29.550 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-31 Jan 2023 - 17:20:29.644 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-31 Jan 2023 - 17:20:33.114 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-31 Jan 2023 - 17:20:33.142 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 17:20:33.756 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'brandCategoryController' defined in file [D:\Programming\Projects\Process\online-market-server\target\classes\online\market\uz\controller\BrandCategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'online.market.uz.service.BrandCategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-31 Jan 2023 - 17:20:33.760 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-31 Jan 2023 - 17:20:33.765 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
-31 Jan 2023 - 17:20:33.775 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
-31 Jan 2023 - 17:20:33.778 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
-31 Jan 2023 - 17:20:33.806 - o.s.b.a.l.ConditionEvaluationReportLogger -  INFO  - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-31 Jan 2023 - 17:20:33.855 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in online.market.uz.controller.BrandCategoryController required a bean of type 'online.market.uz.service.BrandCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'online.market.uz.service.BrandCategoryService' in your configuration.
-
+01 Feb 2023 - 14:51:01.530 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 14660 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
+01 Feb 2023 - 14:51:01.606 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
+01 Feb 2023 - 14:51:01.608 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
+01 Feb 2023 - 14:51:03.474 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01 Feb 2023 - 14:51:04.143 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 648 ms. Found 19 JPA repository interfaces.
+01 Feb 2023 - 14:51:05.370 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
+01 Feb 2023 - 14:51:05.390 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+01 Feb 2023 - 14:51:05.391 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
+01 Feb 2023 - 14:51:05.597 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+01 Feb 2023 - 14:51:05.598 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 3896 ms
+01 Feb 2023 - 14:51:05.883 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+01 Feb 2023 - 14:51:05.999 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
+01 Feb 2023 - 14:51:06.377 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+01 Feb 2023 - 14:51:06.767 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+01 Feb 2023 - 14:51:07.298 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c4b5ceb
+01 Feb 2023 - 14:51:07.307 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+01 Feb 2023 - 14:51:07.464 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+01 Feb 2023 - 14:51:11.560 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01 Feb 2023 - 14:51:11.586 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01 Feb 2023 - 14:51:13.677 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8888 (http) with context path ''
+01 Feb 2023 - 14:51:13.691 - o.m.uz.OnlineMarketServerApplication -  INFO  - Started OnlineMarketServerApplication in 13.214 seconds (process running for 15.024)
+01 Feb 2023 - 15:45:50.595 - com.zaxxer.hikari.pool.HikariPool -  WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m11s908ms117µs900ns).
+01 Feb 2023 - 15:55:01.452 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+01 Feb 2023 - 15:55:01.609 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+01 Feb 2023 - 15:55:01.635 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+01 Feb 2023 - 15:55:13.409 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 3440 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
+01 Feb 2023 - 15:55:13.431 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
+01 Feb 2023 - 15:55:13.432 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
+01 Feb 2023 - 15:55:14.707 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01 Feb 2023 - 15:55:15.389 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 668 ms. Found 19 JPA repository interfaces.
+01 Feb 2023 - 15:55:16.131 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
+01 Feb 2023 - 15:55:16.148 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+01 Feb 2023 - 15:55:16.149 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
+01 Feb 2023 - 15:55:16.304 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+01 Feb 2023 - 15:55:16.305 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2788 ms
+01 Feb 2023 - 15:55:16.534 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+01 Feb 2023 - 15:55:16.623 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
+01 Feb 2023 - 15:55:16.884 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+01 Feb 2023 - 15:55:17.048 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+01 Feb 2023 - 15:55:17.289 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@214b342f
+01 Feb 2023 - 15:55:17.291 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+01 Feb 2023 - 15:55:17.365 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+01 Feb 2023 - 15:55:19.595 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01 Feb 2023 - 15:55:19.609 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01 Feb 2023 - 15:55:21.012 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8888 (http) with context path ''
+01 Feb 2023 - 15:55:21.024 - o.m.uz.OnlineMarketServerApplication -  INFO  - Started OnlineMarketServerApplication in 8.347 seconds (process running for 9.617)
+01 Feb 2023 - 16:09:37.992 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+01 Feb 2023 - 16:09:37.996 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+01 Feb 2023 - 16:09:38.012 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+01 Feb 2023 - 16:09:47.005 - o.m.uz.OnlineMarketServerApplication -  INFO  - Starting OnlineMarketServerApplication using Java 17.0.5 with PID 8212 (D:\Programming\Projects\Process\online-market-server\target\classes started by Sardorbek in D:\Programming\Projects\Process\online-market-server)
+01 Feb 2023 - 16:09:47.032 - o.m.uz.OnlineMarketServerApplication -  DEBUG - Running with Spring Boot v3.0.2, Spring v6.0.4
+01 Feb 2023 - 16:09:47.033 - o.m.uz.OnlineMarketServerApplication -  INFO  - The following 1 profile is active: "dev"
+01 Feb 2023 - 16:09:48.160 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01 Feb 2023 - 16:09:48.455 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 285 ms. Found 19 JPA repository interfaces.
+01 Feb 2023 - 16:09:49.130 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8888 (http)
+01 Feb 2023 - 16:09:49.143 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+01 Feb 2023 - 16:09:49.144 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/10.1.5]
+01 Feb 2023 - 16:09:49.270 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+01 Feb 2023 - 16:09:49.271 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2152 ms
+01 Feb 2023 - 16:09:49.484 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+01 Feb 2023 - 16:09:49.546 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 6.1.6.Final
+01 Feb 2023 - 16:09:49.750 - org.hibernate.orm.deprecation -  WARN  - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+01 Feb 2023 - 16:09:49.895 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+01 Feb 2023 - 16:09:50.139 - com.zaxxer.hikari.pool.HikariPool -  INFO  - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58c42c8c
+01 Feb 2023 - 16:09:50.141 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+01 Feb 2023 - 16:09:50.204 - SQL dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+01 Feb 2023 - 16:09:52.453 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01 Feb 2023 - 16:09:52.465 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01 Feb 2023 - 16:09:53.861 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8888 (http) with context path ''
+01 Feb 2023 - 16:09:53.873 - o.m.uz.OnlineMarketServerApplication -  INFO  - Started OnlineMarketServerApplication in 7.673 seconds (process running for 8.815)
+01 Feb 2023 - 16:10:05.261 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+01 Feb 2023 - 16:10:05.264 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+01 Feb 2023 - 16:10:05.277 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
